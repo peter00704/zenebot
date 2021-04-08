@@ -4,7 +4,6 @@ const Discord = require('discord.js'),
     client = new Discord.Client(),
     config = {
         prefix: "z!",
-        token: process.env.TOKEN || "ODI0NzI2NTM3OTQwMzY5NTQw.YFzkcQ.fNU_aeMKWabmK0puGXBLTiQ1zSE"
     };
 
 // Create a new DisTube
@@ -81,4 +80,4 @@ distube
         message.channel.send("An error encountered: " + e);
     });
 
-client.login(config.token);
+client.login(process.env.BOT_TOKEN);
