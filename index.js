@@ -36,7 +36,7 @@ client.on("message", async (message) => {
   .setFooter("Parancsok")
   .setTimestamp()
  
-  message.channel.send(embed)
+  message.channel.send(helpembed)
 }
 
     if (command == "play")
