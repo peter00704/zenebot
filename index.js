@@ -20,7 +20,7 @@ client.on("message", async (message) => {
     const command = args.shift();
 
    //Set Activity
-   client.user.setActivity("z!play", {
+   client.user.setActivity("z!help", {
     type: "LISTENING"
   });
     
