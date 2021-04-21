@@ -79,5 +79,9 @@ distube
         console.error(e)
         message.channel.send("An error encountered: " + e);
     });
+ if (command === "help") {
+     message.channel.send("Teszt sikeres")
+}
+
 
 client.login(process.env.BOT_TOKEN);
