@@ -23,6 +23,21 @@ client.on("message", async (message) => {
    client.user.setActivity("z!play", {
     type: "LISTENING"
   });
+    
+    if(command === "help") {
+  var helpembed = new Discord.MessageEmbed()
+  .setColor("GRAY")
+  .setTitle("Parancsok")
+  .setDescription("Megmutatja a parancsokat!")
+  .addField("PLAY:", "<Zene címe/Link>")
+  .addField("SKIP:", "Átlépi a jelenleg játszott számot!")
+  .addField("STOP:", "Leállítja a számot és lecsatlakozik!")
+  .addfield("bassboost:", "Erősebb basszust ad a zenének!")
+  .setFooter("Parancsok")
+  .setTimestamp()
+ 
+  message.channel.send(embed)
+}
 
     if (command == "play")
         distube.play(message, args.join(" "));
